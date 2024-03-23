@@ -16,7 +16,7 @@ app = Flask(__name__)
 
 
 # load trained model
-model_path = ".venv/sdgp/model.tflite"
+model_path = "model.tflite"
 interpreter = tf.lite.Interpreter(model_path=model_path)
 interpreter.allocate_tensors()
 
